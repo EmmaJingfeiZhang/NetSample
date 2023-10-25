@@ -1,0 +1,11 @@
+# The functions implement two algorithms for generating random graphs with a given degree sequence.
+# The algorithm used is from Jingfei Zhang and Yuguo Chen (2013) ÒSampling for Conditional Inference on Network Data,Ó Journal of the American Statistical Association, 108, 1295-1307.# R code is by Jingfei Zhang. It may be used freely, without any warranty, provided that proper credit is given.
+#
+# GenerateGraphs() implement the sequential importance sampling algorithm for sampling graphs with a fixed degree sequence. It is fast but may provide invalid samples.
+#
+# GenerateGraphs_Non_Stuck() is a more sophisticated algorithm that guarantees the validity of each sample. However, for the same number of samples, this algorithm usually take longer.
+#
+# To implement the R code, users must load in the executables from the .c file and the .cpp file (the first three lines in the R code).
+#
+# For any questions about the code, please contact emmauiuc2009@gmail.com
+#
